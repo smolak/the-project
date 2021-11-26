@@ -50,6 +50,7 @@ model User {
     createdAt     DateTime  @default(now())
     updatedAt     DateTime  @updatedAt
     name          String?
+    handle        String?   @unique
     email         String?   @unique
     password      String?
     emailVerified DateTime?
